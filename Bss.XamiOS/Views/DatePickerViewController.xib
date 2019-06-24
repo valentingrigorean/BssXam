@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerViewController">
+            <connections>
+                <outlet property="CancelButton" destination="DcG-m6-vYC" id="xXg-ek-Lwi"/>
+                <outlet property="DatePicker" destination="x8q-yw-vMv" id="cMW-er-B2B"/>
+                <outlet property="DoneButton" destination="IKe-VC-n47" id="j8p-Zh-jRg"/>
+                <outlet property="TitleLabel" destination="lsg-6y-mf4" id="tle-Rp-S7p"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fee-8b-lDW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KFX-V0-EDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zH-qX-9g7">
+                                <rect key="frame" x="0.0" y="407" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="IKe-VC-n47"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="QFr-TT-wI2"/>
+                                    <barButtonItem systemItem="cancel" id="DcG-m6-vYC"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsg-6y-mf4">
+                                <rect key="frame" x="75" y="429.5" width="225" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGP-LG-Xhl">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="x8q-yw-vMv">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="date" timeIntervalSinceReferenceDate="556445843.959324">
+                                    <!--2018-08-20 08:17:23 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x8q-yw-vMv" secondAttribute="bottom" id="1Og-kg-M9L"/>
+                            <constraint firstItem="x8q-yw-vMv" firstAttribute="leading" secondItem="KFX-V0-EDC" secondAttribute="leading" id="2cQ-NQ-O9S"/>
+                            <constraint firstItem="EGP-LG-Xhl" firstAttribute="height" secondItem="x8q-yw-vMv" secondAttribute="height" id="3Qo-zU-wB5"/>
+                            <constraint firstItem="EGP-LG-Xhl" firstAttribute="centerX" secondItem="x8q-yw-vMv" secondAttribute="centerX" id="6K3-Ap-qPY"/>
+                            <constraint firstItem="x8q-yw-vMv" firstAttribute="top" secondItem="2zH-qX-9g7" secondAttribute="bottom" id="BPJ-kN-pVW"/>
+                            <constraint firstItem="2zH-qX-9g7" firstAttribute="leading" secondItem="KFX-V0-EDC" secondAttribute="leading" id="Mlb-vl-6gZ"/>
+                            <constraint firstAttribute="trailing" secondItem="x8q-yw-vMv" secondAttribute="trailing" id="VQ4-DT-wII"/>
+                            <constraint firstAttribute="trailing" secondItem="2zH-qX-9g7" secondAttribute="trailing" id="ac5-4s-YzZ"/>
+                            <constraint firstItem="lsg-6y-mf4" firstAttribute="centerY" secondItem="2zH-qX-9g7" secondAttribute="centerY" id="l37-pW-Q0w"/>
+                            <constraint firstItem="lsg-6y-mf4" firstAttribute="centerX" secondItem="2zH-qX-9g7" secondAttribute="centerX" id="nGI-MP-dWG"/>
+                            <constraint firstItem="EGP-LG-Xhl" firstAttribute="centerY" secondItem="x8q-yw-vMv" secondAttribute="centerY" id="uBP-i4-QA1"/>
+                            <constraint firstItem="EGP-LG-Xhl" firstAttribute="width" secondItem="x8q-yw-vMv" secondAttribute="width" id="xGB-cv-bq8"/>
+                            <constraint firstAttribute="trailing" secondItem="lsg-6y-mf4" secondAttribute="trailing" constant="75" id="yyR-3G-TWW"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fee-8b-lDW" secondAttribute="trailing" id="4Dt-lF-Uzr"/>
+                <constraint firstItem="fee-8b-lDW" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="CZd-Qn-DgX"/>
+                <constraint firstItem="fee-8b-lDW" firstAttribute="top" secondItem="2" secondAttribute="top" id="Erj-aW-cXO"/>
+                <constraint firstAttribute="bottom" secondItem="fee-8b-lDW" secondAttribute="bottom" id="H0s-Ig-cPn"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

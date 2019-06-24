@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Validations\CodeFiscalRule.cs" />
+    <Compile Remove="Validations\PhoneNumberRule.cs" />
+    <Compile Remove="Validations\NumericRule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI" Version="9.9.5" />
+    <PackageReference Include="ReactiveUI.Fody" Version="9.9.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\">
+    </Folder>
+    <Folder Include="Extensions\">
+    </Folder>
+  </ItemGroup>
+</Project>

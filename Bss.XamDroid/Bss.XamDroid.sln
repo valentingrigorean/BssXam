@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bss.XamDroid", "Bss.XamDroid.csproj", "{45305359-EE6A-47E0-BE6C-3A76118E57E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Mock|Any CPU = Mock|Any CPU
+		Mock|iPhoneSimulator = Mock|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Mock|Any CPU.ActiveCfg = Mock|Any CPU
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Mock|Any CPU.Build.0 = Mock|Any CPU
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Mock|iPhoneSimulator.ActiveCfg = Mock|iPhoneSimulator
+		{45305359-EE6A-47E0-BE6C-3A76118E57E6}.Mock|iPhoneSimulator.Build.0 = Mock|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
